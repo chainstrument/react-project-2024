@@ -1,5 +1,5 @@
 
-import React, { useState} from "React"
+import React, { useState} from "react"
 
 function ExampleComponent ()  {
   const [count, setCount] = useState(0)
@@ -15,7 +15,7 @@ function ExampleComponent ()  {
 function App() {
   return (
     <>
-    bojour
+      <ExampleComponent /> 
     </>
   );
 }
