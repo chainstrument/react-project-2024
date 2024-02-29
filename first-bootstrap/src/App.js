@@ -7,7 +7,10 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import ThemeSwitcher from './pages/ThemeSwitcher';
- 
+
+import ClientForm from './components/ClientForm'; 
+import FreelanceForm from './components/FreelanceForm';
+
 
 function App() {
   return (
@@ -16,7 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="blogs" element={<Blogs />} />
+            <Route path="blogs" element={<Blogs />} / >
+              
             <Route path="themeswitcher" element={<ThemeSwitcher />} />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NoPage />} />

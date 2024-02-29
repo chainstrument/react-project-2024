@@ -3,26 +3,28 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/blogs">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/themeswitcher">Theme switcher</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link to="/" className="nav-link  " >Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/blogs" className="nav-link  ">Blogs</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/themeswitcher" className="nav-link  ">Theme switcher</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link  ">Contact</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <Outlet />
     </>
-  )
+  );
 };
 
 export default Layout;
