@@ -1,7 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+
 import Todo from './components/Todo';
+import TodoForm from './components/Form';
 import { useState } from 'react';
+
+import './App.css'
 
 function App() {
 
