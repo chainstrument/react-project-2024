@@ -18,6 +18,9 @@ const Layout = () => {
             <li className="nav-item">
               <Link to="/contact" className="nav-link  ">Contact</Link>
             </li>
+            <li className="nav-item">
+              <Link to="/survey" className="nav-link  ">Survey</Link>
+            </li>
           </ul>
         </div>
       </nav>

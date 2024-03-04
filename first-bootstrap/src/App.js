@@ -8,6 +8,9 @@ import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import ThemeSwitcher from './pages/ThemeSwitcher';
 
+
+import Survey from './pages/Survey';
+
 import ClientForm from './components/ClientForm'; 
 import FreelanceForm from './components/FreelanceForm';
 
@@ -23,6 +26,7 @@ function App() {
               
             <Route path="themeswitcher" element={<ThemeSwitcher />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="/survey" element={<Survey />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
